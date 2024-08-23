@@ -12,6 +12,9 @@ while [ "$count" -lt 20 ]; do
     sleep 1
 done
 
+export a=b
+printenv
+
 cat >my-artifact.html <<EOF
 <html>
 <body>
