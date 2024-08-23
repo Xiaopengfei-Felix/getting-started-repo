@@ -12,8 +12,15 @@ while [ "$count" -lt 20 ]; do
     sleep 1
 done
 
-export MY_VARIABLE="hello"
-echo "Set MY_VARIABLE=$MY_VARIABLE"
+pwd
+echo '-------'
+ls -lha
+echo '-------'
+ls -lha ../go/env
+echo '-------'
+export GOCD_VAR="dynamic_value"
+echo "export GOCD_VAR=${GOCD_VAR}" >> ../go/env/go_env.sh
+echo '-------'
 env
 
 cat >my-artifact.html <<EOF
