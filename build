@@ -16,12 +16,9 @@ pwd
 echo '-------'
 ls -lha
 echo '-------'
-ls -lha ../go/env
-echo '-------'
 export GOCD_VAR="dynamic_value"
-echo "export GOCD_VAR=${GOCD_VAR}" >> ../go/env/go_env.sh
-echo "export MY_VAR=some_value" > ../go/env/my_var.sh
-ls -lha ../go/env
+echo "export GOCD_VAR=${GOCD_VAR}" >> go_env.sh
+ls -lha
 echo '-------'
 env
 
