@@ -20,6 +20,8 @@ export GOCD_VAR="dynamic_value"
 echo "export GOCD_VAR=${GOCD_VAR}" >> go_env.sh
 ls -lha
 echo '-------'
+cat go_env.sh
+echo '-------'
 env
 
 cat >my-artifact.html <<EOF
