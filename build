@@ -12,8 +12,8 @@ while [ "$count" -lt 20 ]; do
     sleep 1
 done
 
-export a=b
-printenv
+export MY_VAR="some_value"
+echo "Set MY_VAR=$MY_VAR"
 
 cat >my-artifact.html <<EOF
 <html>
